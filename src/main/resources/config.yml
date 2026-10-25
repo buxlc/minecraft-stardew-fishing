@@ -1,0 +1,48 @@
+# 所有价格单位均为服务器金币；售卖与工坊商店需要 Vault 和经济插件。
+fishing:
+  enabled-by-default: true
+  disabled-worlds: []
+  lava-min-wait-ticks: 240
+  lava-max-wait-ticks: 600
+  lava-bite-window-ticks: 70
+  king-chance: 0.0015
+  king-cooldown-hours: 24
+  maximum-luck-bonus: 2.0
+  length-distribution-power: 2.0
+  bait-catch-chance: 0.06
+economy:
+  cooked-multiplier: 1.5
+food:
+  raw-buff-seconds: 8
+  cooked-buff-seconds: 25
+  king-buff-seconds: 45
+  buff-cooldown-seconds: 30
+baits:
+  basic: {name: '蚯蚓鱼饵', material: WHEAT_SEEDS, luck: 0.10, length-bonus: 0.00, catch-weight: 82.0}
+  fine: {name: '鲜虾鱼饵', material: PUMPKIN_SEEDS, luck: 0.30, length-bonus: 0.03, catch-weight: 15.0}
+  premium: {name: '珍珠鱼饵', material: MELON_SEEDS, luck: 0.60, length-bonus: 0.07, catch-weight: 2.7}
+  master: {name: '星辉鱼饵', material: TORCHFLOWER_SEEDS, luck: 1.00, length-bonus: 0.12, catch-weight: 0.3}
+tackles:
+  copper: {name: '铜制吊具', material: TRIPWIRE_HOOK, luck: 0.15, length-bonus: 0.00, price: 120.0, lava: false}
+  treasure: {name: '寻珍吊具', material: NAUTILUS_SHELL, luck: 0.45, length-bonus: 0.02, price: 450.0, lava: false}
+  quality: {name: '量鱼吊具', material: PRISMARINE_SHARD, luck: 0.15, length-bonus: 0.12, price: 380.0, lava: false}
+  lava: {name: '熔岩吊具', material: MAGMA_CREAM, luck: 0.10, length-bonus: 0.00, price: 800.0, lava: true}
+upgrades:
+  '1': {price: 250.0, luck: 0.10, length-bonus: 0.02}
+  '2': {price: 750.0, luck: 0.20, length-bonus: 0.05}
+  '3': {price: 1800.0, luck: 0.35, length-bonus: 0.08}
+# 无序配方。amount 为产量；材料各占一个合成格，升级饵必须使用本插件鱼饵。
+recipes:
+  basic: {amount: 6, ingredients: [WHEAT, ROTTEN_FLESH]}
+  fine: {amount: 3, ingredients: ['bait:basic', SUGAR, DRIED_KELP]}
+  premium: {amount: 2, ingredients: ['bait:fine', PRISMARINE_CRYSTALS, HONEY_BOTTLE]}
+  master: {amount: 1, ingredients: ['bait:premium', GHAST_TEAR, GLOWSTONE_DUST]}
+# 可选坐标渔区；鱼定义的 regions 列表可引用这里的ID。重叠区域按 priority 降序。
+# regions:
+#   spawn_lake:
+#     name: 主城湖
+#     world: world
+#     min: [-120, -64, -120]
+#     max: [120, 320, 120]
+#     priority: 10
+regions: {}

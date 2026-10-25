@@ -1,0 +1,19 @@
+name: StardewFishing
+version: '1.0.0'
+main: cn.bucheng.stardewfishing.StardewFishingPlugin
+api-version: '1.21.4'
+description: 星露渔歌 · 区域鱼种、鱼王、图鉴、烤鱼与鱼竿工坊
+author: Bucheng
+softdepend: [Vault]
+commands:
+  sfish:
+    description: 打开星露渔歌
+    aliases: [fish, fishing, diaoyu]
+    usage: /sfish
+permissions:
+  stardewfishing.use:
+    default: true
+    description: 使用自定义钓鱼和钓鱼菜单
+  stardewfishing.admin:
+    default: op
+    description: 重载配置及发放测试物品

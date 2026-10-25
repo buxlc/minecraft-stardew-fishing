@@ -1,0 +1,439 @@
+# 长度单位 cm，价格单位金币。鱼种可继续添加；material 支持 COD / SALMON。
+# biomes/worlds/regions 留空即不限。start-time/end-time 使用MC时间并支持跨午夜。
+fish:
+  gudgeon:
+    name: '溪流白条'
+    material: 'COD'
+    rarity: 'COMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 8
+    max-length: 24
+    min-price: 18
+    max-price: 32
+    weight: 1
+    buff: 'SPEED'
+    location: '各类主世界水域'
+  carp:
+    name: '金鳞鲫鱼'
+    material: 'COD'
+    rarity: 'COMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 16
+    max-length: 42
+    min-price: 22
+    max-price: 40
+    weight: 1
+    buff: 'SATURATION'
+    location: '各类主世界水域'
+  river_perch:
+    name: '河鲈'
+    material: 'COD'
+    rarity: 'UNCOMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 20
+    max-length: 55
+    min-price: 28
+    max-price: 52
+    weight: 1
+    buff: 'HASTE'
+    location: '河流'
+    biomes: [RIVER, FROZEN_RIVER]
+  rainbow_trout:
+    name: '虹鳟'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 28
+    max-length: 76
+    min-price: 42
+    max-price: 72
+    weight: 1
+    buff: 'SPEED'
+    location: '河流 · 白天'
+    biomes: [RIVER]
+    end-time: 12000
+  catfish:
+    name: '雨夜鲶鱼'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 45
+    max-length: 115
+    min-price: 55
+    max-price: 90
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '河流或沼泽 · 雨夜'
+    biomes: [RIVER, SWAMP, MANGROVE_SWAMP]
+    start-time: 12000
+    end-time: 23000
+    weather: 'RAIN'
+  blue_sardine:
+    name: '蓝背沙丁鱼'
+    material: 'COD'
+    rarity: 'COMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 12
+    max-length: 32
+    min-price: 18
+    max-price: 35
+    weight: 1
+    buff: 'WATER_BREATHING'
+    location: '海洋'
+    biomes: [OCEAN, DEEP_OCEAN, COLD_OCEAN, DEEP_COLD_OCEAN, WARM_OCEAN, LUKEWARM_OCEAN, DEEP_LUKEWARM_OCEAN]
+  tuna:
+    name: '远洋金枪鱼'
+    material: 'COD'
+    rarity: 'UNCOMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 40
+    max-length: 125
+    min-price: 30
+    max-price: 58
+    weight: 1
+    buff: 'HASTE'
+    location: '海洋或深海'
+    biomes: [OCEAN, DEEP_OCEAN, LUKEWARM_OCEAN, DEEP_LUKEWARM_OCEAN]
+  swordfish:
+    name: '银翼剑鱼'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 65
+    max-length: 180
+    min-price: 42
+    max-price: 76
+    weight: 1
+    buff: 'SPEED'
+    location: '深海 · 白天'
+    biomes: [DEEP_OCEAN, DEEP_COLD_OCEAN, DEEP_LUKEWARM_OCEAN]
+    end-time: 12000
+  moonfish:
+    name: '月光翻车鱼'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 70
+    max-length: 190
+    min-price: 58
+    max-price: 90
+    weight: 1
+    buff: 'WATER_BREATHING'
+    location: '深海 · 夜晚'
+    biomes: [DEEP_OCEAN, DEEP_COLD_OCEAN, DEEP_LUKEWARM_OCEAN]
+    start-time: 13000
+    end-time: 23000
+  clownfish:
+    name: '珊瑚小丑鱼'
+    material: 'COD'
+    rarity: 'UNCOMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 6
+    max-length: 18
+    min-price: 26
+    max-price: 48
+    weight: 1
+    buff: 'LUCK'
+    location: '暖水海洋'
+    biomes: [WARM_OCEAN]
+  pearl_fish:
+    name: '珍珠蝶鱼'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 10
+    max-length: 32
+    min-price: 40
+    max-price: 74
+    weight: 1
+    buff: 'LUCK'
+    location: '暖水海洋 · 晴天'
+    biomes: [WARM_OCEAN, LUKEWARM_OCEAN]
+    weather: 'CLEAR'
+  ice_salmon:
+    name: '冰晶鲑鱼'
+    material: 'SALMON'
+    rarity: 'UNCOMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 22
+    max-length: 65
+    min-price: 30
+    max-price: 55
+    weight: 1
+    buff: 'HASTE'
+    location: '冰河或冰海'
+    biomes: [FROZEN_RIVER, FROZEN_OCEAN, DEEP_FROZEN_OCEAN, COLD_OCEAN, DEEP_COLD_OCEAN]
+  aurora_fish:
+    name: '极光银鱼'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 25
+    max-length: 72
+    min-price: 55
+    max-price: 88
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '冰海 · 夜晚'
+    biomes: [FROZEN_OCEAN, DEEP_FROZEN_OCEAN]
+    start-time: 13000
+    end-time: 23000
+  mud_loach:
+    name: '沼泽泥鳅'
+    material: 'COD'
+    rarity: 'COMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 10
+    max-length: 28
+    min-price: 20
+    max-price: 38
+    weight: 1
+    buff: 'SATURATION'
+    location: '沼泽或红树林'
+    biomes: [SWAMP, MANGROVE_SWAMP]
+  emerald_bass:
+    name: '翡翠大口鲈'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 25
+    max-length: 78
+    min-price: 42
+    max-price: 74
+    weight: 1
+    buff: 'HASTE'
+    location: '沼泽或红树林'
+    biomes: [SWAMP, MANGROVE_SWAMP]
+  jungle_arowana:
+    name: '雨林龙鱼'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 35
+    max-length: 105
+    min-price: 44
+    max-price: 78
+    weight: 1
+    buff: 'SPEED'
+    location: '丛林水域'
+    biomes: [JUNGLE, SPARSE_JUNGLE, BAMBOO_JUNGLE]
+  cave_blindfish:
+    name: '洞穴盲鱼'
+    material: 'COD'
+    rarity: 'UNCOMMON'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 8
+    max-length: 22
+    min-price: 28
+    max-price: 52
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '地下水域 · Y≤32'
+    max-y: 32
+  crystal_fish:
+    name: '晶洞琉璃鱼'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 18
+    max-length: 52
+    min-price: 58
+    max-price: 90
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '地下水域 · Y≤0'
+    max-y: 0
+  cherry_koi:
+    name: '樱花锦鲤'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 20
+    max-length: 68
+    min-price: 42
+    max-price: 76
+    weight: 1
+    buff: 'LUCK'
+    location: '樱花树林水域'
+    biomes: [CHERRY_GROVE]
+  ash_minnow:
+    name: '灰烬小鱼'
+    material: 'COD'
+    rarity: 'COMMON'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 9
+    max-length: 26
+    min-price: 22
+    max-price: 40
+    weight: 1
+    buff: 'FIRE_RESISTANCE'
+    location: '地狱岩浆 · 需要熔岩吊具'
+  magma_carp:
+    name: '熔浆鲤'
+    material: 'COD'
+    rarity: 'UNCOMMON'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 24
+    max-length: 66
+    min-price: 30
+    max-price: 56
+    weight: 1
+    buff: 'FIRE_RESISTANCE'
+    location: '地狱岩浆 · 需要熔岩吊具'
+  crimson_snapper:
+    name: '绯红鲷鱼'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 28
+    max-length: 82
+    min-price: 44
+    max-price: 78
+    weight: 1
+    buff: 'HASTE'
+    location: '绯红森林岩浆'
+    biomes: [CRIMSON_FOREST]
+  warped_eel:
+    name: '诡异鳗鱼'
+    material: 'COD'
+    rarity: 'RARE'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 38
+    max-length: 120
+    min-price: 44
+    max-price: 78
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '诡异森林岩浆'
+    biomes: [WARPED_FOREST]
+  soul_ray:
+    name: '灵魂鳐'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 55
+    max-length: 145
+    min-price: 58
+    max-price: 90
+    weight: 1
+    buff: 'SPEED'
+    location: '灵魂沙峡谷岩浆'
+    biomes: [SOUL_SAND_VALLEY]
+  basalt_sturgeon:
+    name: '玄武岩鲟'
+    material: 'COD'
+    rarity: 'EPIC'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 65
+    max-length: 170
+    min-price: 58
+    max-price: 90
+    weight: 1
+    buff: 'FIRE_RESISTANCE'
+    location: '玄武岩三角洲岩浆'
+    biomes: [BASALT_DELTAS]
+  river_king:
+    name: '苍流之王'
+    material: 'SALMON'
+    rarity: 'KING'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 100
+    max-length: 180
+    min-price: 1200
+    max-price: 1650
+    weight: 1
+    buff: 'REGENERATION'
+    location: '河流 · 雨天 · 珍珠鱼饵及以上'
+    biomes: [RIVER]
+    weather: 'RAIN'
+    min-bait: 3
+  ocean_king:
+    name: '深蓝君主'
+    material: 'SALMON'
+    rarity: 'KING'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 180
+    max-length: 320
+    min-price: 1300
+    max-price: 1800
+    weight: 1
+    buff: 'WATER_BREATHING'
+    location: '深海 · 夜晚 · 珍珠鱼饵及以上'
+    biomes: [DEEP_OCEAN, DEEP_COLD_OCEAN, DEEP_LUKEWARM_OCEAN]
+    start-time: 13000
+    end-time: 23000
+    min-bait: 3
+  glacier_king:
+    name: '霜冠鱼王'
+    material: 'SALMON'
+    rarity: 'KING'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 95
+    max-length: 175
+    min-price: 1250
+    max-price: 1750
+    weight: 1
+    buff: 'LUCK'
+    location: '冰海 · 夜晚 · 星辉鱼饵'
+    biomes: [FROZEN_OCEAN, DEEP_FROZEN_OCEAN]
+    start-time: 13000
+    end-time: 23000
+    min-bait: 4
+  cave_king:
+    name: '地心琉璃王'
+    material: 'SALMON'
+    rarity: 'KING'
+    habitat: 'WATER'
+    environments: [NORMAL]
+    min-length: 80
+    max-length: 155
+    min-price: 1250
+    max-price: 1750
+    weight: 1
+    buff: 'NIGHT_VISION'
+    location: '地下水域 · Y≤0 · 星辉鱼饵'
+    max-y: 0
+    min-bait: 4
+  inferno_king:
+    name: '炎狱帝王'
+    material: 'SALMON'
+    rarity: 'KING'
+    habitat: 'LAVA'
+    environments: [NETHER]
+    min-length: 160
+    max-length: 300
+    min-price: 1400
+    max-price: 1950
+    weight: 1
+    buff: 'FIRE_RESISTANCE'
+    location: '地狱岩浆 · Y≤40 · 星辉鱼饵与熔岩吊具'
+    max-y: 40
+    min-bait: 4
